@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  min-height: 500px;
+  margin-bottom: 500px;
+}
+
+#HOME {
+  margin-bottom: 0px;
+}
+body {
+  position: relative;
+  background-image: url("./assets/Background1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  -ms-overflow-style: none;
+}
+
+
+
+.html {
+  scroll-behavior: smooth;
+}
+
+#mainNavbar{
+  position: sticky;
+  top: 0 ;
+  z-index: 300;
+}
+
+#mainNavbar .navbar-brand {
+    font-family: 'Evogria';
+    font-weight: normal;
+    font-size: 40px;
+    text-align: left;
+    color: #05CAF7;
+    text-shadow: 0px 3px 6px #000;
+  }
+    
+  #mainNavbar .navbar-text {
+    font-family: 'Evogria';
+    font-weight: normal;
+    font-size: 40px;
+    text-align: left;
+    color:#F8048A;
+    text-shadow: 0px 3px 6px #000;
+  }
+  
+  #mainNavbar .nav-link {
+    font-family: 'Bahnschrift';
+    font-weight: normal;
+    font-size: 25px;
+    text-align: right;
+    color: #fff;
+  }
+  
+  .navbar-nav > li{
+    padding-right:65px;
+  }
+  
+  @media screen and (max-width: 700px){
+    .navbar-nav > li{
+      padding-right:0px;
+    }
+  }
+  
+  .nav-link{
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .nav-link:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #fff;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+   
+  .nav-link:hover:after{
+    width: 100%;
+    left: 0;
+    background: #fff;
+  }
+
+  /* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+  
+#BOXBOTTOMSCREEN {
+  position: relative;
+  width: 100%;
+  height: 46.111111111%;
+  bottom: 150px;
+}
+@media screen and (max-height: 568px),(max-width: 768px){
+  #BOXBOTTOMSCREEN {
+    display: none;
+  }
+}
+
+  #header {
+    position: relative;
+    font-family: Coolvetica;
+    font-weight: normal;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0px 3px 6px rgba(241, 241, 241, 0.5);
+    text-decoration: underline;
+    left: 50px;
+    bottom:-100px;
+    font-size: 3rem;
+}
+@media screen and (max-height: 568px),(max-width: 700px){
+  #header{
+    left:10px;
+  }
+}
+
+#jersey {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    bottom:-100px;
+    left: 50px;
+}
+@media screen and (max-height: 568px),(max-width: 700px){
+    #jersey{
+    width: 200px;
+    height: 250px;
+    left:10px;
+    }
+  }
+#textshop {
+    position: relative;
+    font-family: "Andale Mono";
+    font-weight: normal;
+    font-size: 23px;
+    text-align: left;
+    color: #fff;
+    bottom:-100px;
+    left: 110px;
+}
+
+@media screen and (max-height: 568px),(max-width: 700px){
+  #textshop{
+    font-size: 11.5px;
+    left:40px;
+  }
+}
+#textprice {
+  position: relative;
+  font-family: "Andale Mono";
+  font-weight: normal;
+  font-size: 23px;
+  text-align: left;
+  color: #05caf7;
+  bottom:-100px;
+  left: 180px;
+}
+@media screen and (max-height: 568px),(max-width: 700px){
+  #textprice {
+    font-size: 11.5px;
+    left:75px;
+  }
+}
