@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body {
+    position: relative;
+    background-color: #010203;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    -ms-overflow-style: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .html {
+    scroll-behavior: smooth;
+  }
+  
+  #mainNavbar{
+    position: sticky;
+    top: 0 ;
+    z-index: 300;
+  }
+  
+  #mainNavbar .navbar-brand {
+      font-family: 'Evogria';
+      font-weight: normal;
+      font-size: 40px;
+      text-align: left;
+      color: #05CAF7;
+      text-shadow: 0px 3px 6px #000;
+    }
+      
+    #mainNavbar .navbar-text {
+      font-family: 'Evogria';
+      font-weight: normal;
+      font-size: 40px;
+      text-align: left;
+      color:#F8048A;
+      text-shadow: 0px 3px 6px #000;
+    }
+    
+    #mainNavbar .nav-link {
+      font-family: 'Bahnschrift';
+      font-weight: normal;
+      font-size: 25px;
+      text-align: right;
+      color: #fff;
+    }
+    
+    .navbar-nav > li{
+      padding-right:65px;
+    }
+    
+    @media screen and (max-width: 700px){
+      .navbar-nav > li{
+        padding-right:0px;
+      }
+    }
+    
+    .nav-link{
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .nav-link:after{
+      content: '';
+      position: absolute;
+      width: 0; height: 3px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: #fff;
+      transition: width .2s ease;
+      -webkit-transition: width .2s ease;
+    }
+     
+    .nav-link:hover:after{
+      width: 100%;
+      left: 0;
+      background: #fff;
+    }
+  
+    /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  #jersey {
+    background: url("./assets/jerseyshow.jpg");
+    position: relative;
+    width: 800px;
+    height: 800px;
+    bottom:-150px;
+    left: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media screen and (max-height: 568px),(max-width: 700px){
+    #jersey{
+    width: 100%;
+    height: 400;
+    left:10px;
+    }
+  }
+
+#header {
+    position: relative;
+    font-family: "Andale Mono";
+    font-weight: normal;
+    font-size: 40px;
+    color: #fff;
+    bottom: 666px;
+    left: 1000px;
+}
+@media screen and (max-height: 568px),(max-width: 700px){
+    #header{
+    position: relative;
+    font-family: "Andale Mono";
+    font-weight: normal;
+    font-size: 40px;
+    color: #fff;
+    left: 10px;
+    bottom: 380px;
+    }
+  }
+
+#price {
+    position: relative;
+    font-family: "Andale Mono";
+    font-weight: normal;
+    font-size: 40px;
+    color: #fff;
+    bottom: 666px;
+    left: 1000px;
+}
+@media screen and (max-height: 568px),(max-width: 700px){
+    #price{
+    position: relative;
+    font-family: "Andale Mono";
+    font-weight: normal;
+    font-size: 40px;
+    color: #fff;
+    left: 10px;
+    bottom: 380px;
+    }
+  }
+#size{
+    position: relative;
+    font-family: "Andale Mono";
+    font-weight: normal;
+    font-size: 25px;
+    color: #fff;
+    bottom: 640px;
+    left: 1000px;
+}
+@media screen and (max-height: 568px),(max-width: 700px){
+    #size{
+    position: relative;
+    font-family: "Andale Mono";
+    font-weight: normal;
+    font-size: 25px;
+    color: #fff;
+    left: 10px;
+    bottom: 380px;
+    }
+  }
